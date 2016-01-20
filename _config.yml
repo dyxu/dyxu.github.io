@@ -1,0 +1,29 @@
+# Site settings
+title: DyXu Zone
+name: DyXu Zone
+email: dunyixu@gmail.com
+description: 'DyXu&#039;s Technology Blog'
+keywords: 'DyXu,dyxu,blog,c++,linux,github,IT,互联网'
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "dyxu.github.io" # the base hostname & protocol for your site
+github: dyxu 
+twitter: dunyixu
+
+author:
+  name: DyXu
+  email: dunyixu@gmail.com
+  github: dyxu
+  twitter: dyxu
+  bio: 'DyXu&#039;s Technology Blog'
+  email_md5: 658f3e6a60dd3c3ac0b1953e237cf410
+
+
+# Build settings
+gems: [jekyll-paginate]
+paginate: 20
+paginate_path: "page/:num/"
+markdown: kramdown
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+archives_path: archives.html
