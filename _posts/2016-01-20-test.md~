@@ -26,6 +26,6 @@ $$\begin{equation}\label{3}c=a+b\end{equation}$$
 $$\begin{equation}\label{4}b=c+b\end{equation}$$
 
 
-$$\begin{equation}\label{5}\sqrt[n]{3}\end{equation}$$
+$$\label{5}\sqrt[n]{3}$$
 
 公式见(\ref{1})。

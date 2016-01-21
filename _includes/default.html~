@@ -31,16 +31,15 @@
 	<link href="{{ site.BASE_PATH }}/assets/resources/hightlight/default.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
-	<script type="text/javascript"
-		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-	<script type="text/x-mathjax-config">
-	    MathJax.Hub.Config({
-		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
-		"HTML-CSS": {linebreaks: {automatic: true}},
-		SVG: {linebreaks: {automatic: true}}
-	    });
-	</script>
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+            "HTML-CSS": {linebreaks: {automatic: true}},
+            SVG: {linebreaks: {automatic: true}}});
+    </script>
     {% include google_analytics.html %}
 </head>
 

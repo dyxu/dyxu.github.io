@@ -24,10 +24,6 @@
             </div>
             {{ content }}
 
-	<br>
-	<br>
-	<br>
-
         {% unless page.categories == empty %}
         <ul class="tag_box list-unstyled list-inline">
             <li><i class="fa fa-folder-open"></i></li>
