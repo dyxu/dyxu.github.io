@@ -42,7 +42,7 @@ $$f(x) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
 ### 公式引用
 
-MathJax从2.0版本开始支持公式编号和引用。在公式内`\begin{equation}...\end{equation}`之间插入`\label{id}`给公式编号，然后在合适的地方`eqref{id}`即引用该公式。但是MathJax的默认设置中并没有加入这两个特性，需要在网页的head标签内加入以下代码：
+MathJax从2.0版本开始支持公式编号和引用。在公式内`\begin{equation}...\end{equation}`之间插入`\label{id}`给公式编号，然后在合适的地方`\eqref{id}`即引用该公式。但是MathJax的默认设置中并没有加入这两个特性，需要在网页的head标签内加入以下代码：
 
 	<script type="text/x-mathjax-config">
     		MathJax.Hub.Config({
