@@ -38,7 +38,7 @@ MathJax的安装方式十分便捷，只要把官方提供的JavaScript的代码
 
 $$f(x) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
-而公式内的语法和LaTex相同（详情参见[常用数学符号的LaTeX表示方法](http://mohu.org/info/symbols/symbols.htm)),并且这些公式并不是图片，可以将鼠标移至图片上方进行**复制Tex代码**等操作。
+而公式内的语法和LaTex相同(详情参见[常用数学符号的LaTeX表示方法](http://mohu.org/info/symbols/symbols.htm)）,并且这些公式并不是图片，可以将鼠标移至图片上方进行**复制Tex代码**等操作。
 
 ### 公式引用
 
@@ -58,6 +58,6 @@ MathJax从2.0版本开始支持公式编号和引用。在公式内`\begin{equat
 
 $$\begin{equation}J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}\label{J}\end{equation}$$
 
-在这里通过`\eqref{J}`引用上面的公式\eqref{J}。
+通过`\eqref{J}`引用上面的公式\eqref{J}。
 
 以上。
