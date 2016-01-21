@@ -61,8 +61,3 @@ $$\begin{equation}J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \
 在这里通过`\eqref{J}`引用上面的公式\eqref{J}。
 
 以上。
-
-
-
-
-
