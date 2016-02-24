@@ -2,7 +2,6 @@
 title: MathJax:网页中显示精美公式
 author: dyxu
 layout: post
-comments: true
 permalink: /2016/01/21/mathjax-webpage-display-formula.html
 categories:
   - 工具

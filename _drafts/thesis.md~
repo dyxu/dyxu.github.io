@@ -31,17 +31,5 @@ tags:
 
 时域中，一个理想线性调频信号的脉冲持续时间为\\(T_p\\)秒, 振幅为A, 中心频率为\\(f_c\\)Hz,瞬间频率\\(f=f_c+\mu t\\)
 
-### 3 回波信号
-
-_____________________________________
-
-雷达距离公式：
 $$R(\eta) = \sqrt{R_0^2+V_r^2\eta^2} \approx R_0 + \frac{V_r^2\eta^2}{2R_0}$$
-
-回波信号：
-
-$$S_r(\tau,\eta) \approx A_0 \omega_r(\tau - \frac{2R(\eta)}{c})\omega_a(\eta - \eta_c)exp{-j\frac{4\pi R_0}{\lambda}}
-exp{-j\pi K_a\eta^2}exp{j\pi K_r[\tau - \frac{2R(\eta)}{c}^2]}$$
-
-其中方位调频率\\(K_a\\)为
-$$K_a \approx \frac{2V_r^2}{\lambda R_0}$$
+### 3 回波信号

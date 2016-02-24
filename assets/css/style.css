@@ -108,7 +108,9 @@ article {
 
 article.home div a, article.home pre a { color: #2970A6; }
 article.home div a:hover, article.home pre a:hover { color: #2970A6; text-decoration: none; }
-article img { max-width: 100%; }
+article img { 
+    max-width: 100%;
+}
 
 h1,h2,h3,h4,h5,h6 {
     font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -333,3 +335,7 @@ pre {
       display: none;
 }
 
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
