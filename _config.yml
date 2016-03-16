@@ -1,48 +1,142 @@
-permalink: /:year/:month/:day/:title.html
-gems: [jekyll-paginate]
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:categories/:title.html
+
+safe: false
+gems: ["jekyll-paginate"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 paginate: 10
+encoding: utf-8
+highlighter: rouge
 markdown: kramdown
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
 
-# 作者信息
-author: 
-  name: dunyi xu
-  email: dunyixu@gmail.com
-  link: http://dyxu.github.io
-  weibo: http://weibo.com/dunyixu
-  github: http://github.com/dyxu
-  twitter: https://twitter.com/dunyixu
-# linkedin: 
+# Themes are encouraged to use these universal variables 
+# so be sure to set them if your theme uses them.
+#
+title : dunyixu 的博客
+tagline: 
+author :
+  name : dyxu
+  email : dyxu@gmail.com
+  github : dyxu
+  twitter : dunyixu
+  weibo : dunyixu
+  googleplus : 106360841332647784375
+  feedburner : feedname
 
-# 站点信息
-title: dunyi的博客
-description: My personal blog
-url: http://painterlin.com
-rss_url: /pages/atom.xml
+# The production_url is only used when full-domain names are needed
+# such as sitemap.txt 
+# Most places will/should use BASE_PATH to make the urls
+#
+# If you have set a CNAME (pages.github.com) set your custom domain here.
+# Else if you are pushing to username.github.io, replace with your username.
+# Finally if you are pushing to a GitHub project page, include the project name at the end.
+#
+production_url : http://dyxu.github.io
 
-# gavatar头像及Favicon
-gavatar: /public/img/icon.png
-favicon: /public/img/icon.png
+# All Jekyll-Bootstrap specific configurations are namespaced into this hash
+#
+JB :
+  version : 0.3.0
 
-# google analytics 设置
-ga:
-  id: UA-72595872-1
-  url: dyxu.github.io
+  # All links will be namespaced by BASE_PATH if defined.
+  # Links in your website should always be prefixed with {{BASE_PATH}}
+  # however this value will be dynamically changed depending on your deployment situation.
+  #
+  # CNAME (http://yourcustomdomain.com)
+  #   DO NOT SET BASE_PATH 
+  #   (urls will be prefixed with "/" and work relatively)
+  #
+  # GitHub Pages (http://username.github.io)
+  #   DO NOT SET BASE_PATH 
+  #   (urls will be prefixed with "/" and work relatively)
+  #
+  # GitHub Project Pages (http://username.github.io/project-name)
+  #
+  #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
+  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
+  #
+  # CAUTION:
+  #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
+  #   - Only the following values are falsy: ["", null, false]
+  #   - When setting BASE_PATH it must be a valid url.
+  #     This means always setting the protocol (http|https) or prefixing with "/"
+  BASE_PATH : false
 
-# disqus 设置
-disqus:
-  shortname: dyxu
+  # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
+  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
+  #
+  # Override this by defining an absolute path to assets here.
+  # ex: 
+  #   http://s3.amazonaws.com/yoursite/themes/watermelon
+  #   /assets
+  #
+  ASSET_PATH : false
+  IMAGE_PATH : false
 
-# 主题设置，自动激活某个标签
-active: 读书
+  # These paths are to the main pages Jekyll-Bootstrap ships with.
+  # Some JB helpers refer to these paths; change them here if needed.
+  #
+  archive_path: /archive.html
+  categories_path : /categories.html
+  tags_path : /tags.html
+  atom_path : /atom.xml
+  rss_path : /rss.xml
+  messages_path : /messages.html
+  about_path : /about.html
 
-# 首页除了最新文章外显示分类
-cates: 
-  - 工具
-  - 技术
+  # Settings for comments helper
+  # Set 'provider' to the comment provider you want to use.
+  # Set 'provider' to false to turn commenting off globally.
+  #
+  comments :
+    provider : duoshuo
+    duoshuo :
+      short_name : dyxu
+    disqus :
+      short_name : dyxu
+#    livefyre :
+#      site_id : 123
+#    intensedebate :
+#      account : 123abc
+#    facebook :
+#      appid : 123
+#      num_posts: 5
+#      width: 580
+#      colorscheme: light
 
-# 中文本地化
-locals:
-  tags: 标签
-  about: 关于
-  newest: 最新文章
-  archive: 归档
+  # Settings for analytics helper
+  # Set 'provider' to the analytics provider you want to use.
+  # Set 'provider' to false to turn analytics off globally.
+  #        
+  analytics :
+#    provider : baidu
+#    baidu :
+#      tracking_id : 'a7c01c4b55f06cf1df9cabb9b18a65a3' 
+    google : 
+      tracking_id : 'UA-72595872-1'
+    getclicky :
+      site_id : 
+    mixpanel :
+      token : '_MIXPANEL_TOKEN_'
+
+  # Settings for sharing helper. 
+  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
+  # Set 'provider' to the sharing provider you want to use.
+  # Set 'provider' to false to turn sharing off globally.
+  #
+  sharing :
+    provider : direct
+
+  # Settings for all other include helpers can be defined by creating 
+  # a hash with key named for the given helper. ex:
+  #
+  #   pages_list :
+  #     provider : "custom"   
+  #
+  # Setting any helper's provider to 'custom' will bypass the helper code
+  # and include your custom code. Your custom file must be defined at:
+  #   ./_includes/custom/[HELPER]
+  # where [HELPER] is the name of the helper you are overriding.
