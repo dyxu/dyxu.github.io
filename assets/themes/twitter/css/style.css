@@ -222,7 +222,6 @@ article section h3 { font-size: 143%; }
 article section h4 { font-size: 122%; }
 article section h5 { font-size: 107%; }
 article section p {
-  text-indent:  2em;
   font-size: 107%;
   line-height: 160%;
   margin-bottom: .67em;
@@ -826,3 +825,6 @@ pre code {
     }
 }
 
+pre code {
+    font-family: Monaco
+}

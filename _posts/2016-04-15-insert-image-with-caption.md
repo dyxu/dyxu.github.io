@@ -51,8 +51,7 @@ tags: ["博客", "工具"]
 在文章需要插入图片的位置，用以下方式插入图片即可
 
 {% include image.html
-            img="images/2016/04/insert_image.jpg"
-            title="插入图片例程"
-            caption="图三 插入图片例程" %}
-
+    img="images/2016/04/insert_image.jpg"
+    title="插入图片例程"
+    caption="图三 插入图片例程" %}
 
