@@ -201,7 +201,7 @@ a:hover, a:active { outline: none; }
 /*  Articles  */
 article {
   color: #404040;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, "Microsoft YaHei", sans-serif;
+  font-family: 'Monaco', "Microsoft YaHei", 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 article header {
   border-bottom: 3px solid #e5e5e5;
@@ -432,7 +432,7 @@ tbody tr:hover { background-color: #e5e5e5; }
 /*  Pre and Code  */
 code, pre {
   position: relative;
-  font-family: "Courier New", Consolas, monospace;
+  font-family: 'Monaco', "Courier New", 'Consolas', monospace;
   font-size: 13px;
   behavior: url({{ ASSET_DIR }}/css/PIE.htc);
 }
