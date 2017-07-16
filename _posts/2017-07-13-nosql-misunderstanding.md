@@ -74,11 +74,11 @@ myJSONObject.put(DO_NOT_HARD_CODE_THE_KEY, bindings);
 
 但有几种场景，相信你曾经使用SQL数据库时会感到非常别扭，可以考虑把这部分数据库迁往NoSQL数据库：
 
-如果你使用SQL数据库来存储序列化对象，请改用NoSQL来存储：MongoDB这样的Document数据库是首选；
-如果你使用SQL数据库来存储二进制流（图片、附件等），请改用NoSQL来存储：HDFS、S3甚至MongoDB的GridFS这样的File System很合适，不用再担心你的SQL数据库空间爆增后怎么分表的问题；
-超过几十张表链接查询，只为取得一些字典数据及一些外键关联少数字段的数据：请毫不犹豫地使用Column based数据库如Cassandra、HBase，把你需要查询的结果数据直接设计在一个Column Family中，它们专门为解决多列查询问题存在，但你需要逆关系数据库设计范式：根据第一范式设计就对了；
-一张不停扩展字段、包含许多Null值的表：月月改表改Mapping改Model不累么？换Document类的NoSQL数据库吧，省时省力又省心；
-日志：这个场景就直接使用NoSQL数据库吧，起码不会和你的业务操作抢连接池资源，一不小心还会把你的业务表锁了。
+1. 如果你使用SQL数据库来存储序列化对象，请改用NoSQL来存储：MongoDB这样的Document数据库是首选；
+2. 如果你使用SQL数据库来存储二进制流（图片、附件等），请改用NoSQL来存储：HDFS、S3甚至MongoDB的GridFS这样的File System很合适，不用再担心你的SQL数据库空间爆增后怎么分表的问题；
+3. 超过几十张表链接查询，只为取得一些字典数据及一些外键关联少数字段的数据：请毫不犹豫地使用Column based数据库如Cassandra、HBase，把你需要查询的结果数据直接设计在一个Column Family中，它们专门为解决多列查询问题存在，但你需要逆关系数据库设计范式：根据第一范式设计就对了；
+4. 一张不停扩展字段、包含许多Null值的表：月月改表改Mapping改Model不累么？换Document类的NoSQL数据库吧，省时省力又省心；
+5. 日志：这个场景就直接使用NoSQL数据库吧，起码不会和你的业务操作抢连接池资源，一不小心还会把你的业务表锁了。
 
 ## 3 列族数据库不适用作主数据存储
 
