@@ -307,3 +307,4 @@ func main() {
 - [雨痕学堂](https://segmentfault.com/blog/qyuhen)
 
 - [Go的五十度灰：Golang新开发者要注意的陷阱和常见错误](http://colobu.com/2015/09/07/gotchas-and-common-mistakes-in-go-golang/)
+
